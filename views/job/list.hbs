@@ -1,0 +1,30 @@
+<table class="tavle table-striped">
+<thead> 
+    <tr>
+        <th>Job</th>
+        <th>Job Description</th>
+        <th>Company</th>
+        <th>Location</th>
+        <th>Email</th>
+        <th>Contact</th>
+        <th>Salary</th>
+    </tr>
+</thead>
+<tbody>
+    {{#each list}}
+    <tr>
+        <td>{{this.job_type}}</td>
+        <td>{{this.job_description}}</td>
+        <td>{{this.company_name}}</td>
+        <td>{{this.company_location}}</td>
+        <td>{{this.company_email_id}}</td>
+        <td>{{this.company_contact}}</td>
+        <td>{{this.salary}}</td>
+        <td>
+            <a><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+            <a><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+        </td>
+    </tr>
+    {{/each}}
+</tbody>
+</table>
